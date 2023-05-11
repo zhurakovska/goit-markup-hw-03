@@ -327,6 +327,10 @@ flex-wrap: wrap;
 gap: 48px 24px;
 }
 
+.card-container {
+
+}
+
 .portfolio-card {
   width: calc((100% - 48px) / 3);
   border: 1px solid var(--border-color);
@@ -337,8 +341,9 @@ gap: 48px 24px;
 }
 
 .portfolio-text-wrap {
-  margin: 32px 0;
-  padding-left: 16px;
+  border-top: none;
+  border: 1px solid var(--border-color);
+  padding-left: 32px 16px;
 }
 
 .portfolio-heading {
