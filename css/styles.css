@@ -9,6 +9,21 @@
   --secondary-font-color: #434455;
 }
 
+h1, h1, h3, p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--secondary-font-color);
+  background-color: var(--white-color);
+}
+
 .container {
   width: 1158px;
   margin: 0 auto;
@@ -28,13 +43,25 @@
   border: none;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  color: var(--secondary-font-color);
-  background-color: var(--white-color);
+.section {
+  padding: 120px 0;
+}
+
+.header {
+  padding: 24px 0;
+}
+
+.header > .container {
+  display: flex;
+  align-items: center;
+}
+
+.page-nav {
+  display: flex;
 }
 
 .logo {
+  margin-right: 76px;
   color: var(--violet-color);
   font-size: 18px;
   font-weight: 800;
@@ -61,18 +88,30 @@ body {
   letter-spacing: 0.02em;
 }
 
+.menu-list {
+  display: flex;
+  gap: 40px;
+}
+
 .menu-link:hover,
 .menu-link:focus {
   color: var(--dark-violet-color);
 }
 
-/* .contact {
+
+.contact {
   font-style: normal;
+  margin-left: auto;
 }
 
 .contact-list {
   font-style: normal;
-} */
+  display: flex;
+}
+
+.contact-mail {
+  margin-right: 40px;
+}
 
 .contack-link {
   font-size: 16px;
@@ -87,19 +126,27 @@ body {
 }
 
 .hero {
+  padding: 188px 0;
   background-color: var(--font-color);
 }
 
+.hero > .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .hero-title {
-  font-size: 56px;
-  text-align: center;
+  max-width: 496px;
+  margin-bottom: 48px;
   color:var(--white-color);
+  font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-
 }
 
 .hero-btn {
+  padding: 16px 32px;
   background-color: var(--violet-color);
   color: var(--white-color);
   font-size: 16px;
@@ -114,6 +161,18 @@ body {
   background-color: var(--dark-violet-color);
 }
 
+.info {
+padding-top: 120px;
+}
+
+.info-list {
+  display: flex;
+  gap: 24px;
+}
+
+.info-item {
+  max-width: 264px;
+}
 
 .info-item-title {
   color: var(--font-color);
@@ -124,6 +183,7 @@ body {
 }
 
 .info-item-text {
+  margin-top: 8px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -140,6 +200,12 @@ body {
   text-transform: capitalize;
 }
 
+.about-list {
+  margin-top: 72px;
+  display: flex;
+  gap: 24px;
+}
+
 .team {
   background-color: var(--dark-white-color);
 }
@@ -154,8 +220,22 @@ body {
   text-transform: capitalize;
 }
 
+.team-list {
+  margin-top: 72px;
+  display: flex;
+  gap: 24px;
+}
+
 .team-item {
+  width: calc((100% - 72px) / 4);
   background-color: var(--white-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 4px;
+}
+
+
+.team-text-wpar {
+margin: 32px 16px;
 }
 
 .team-name {
@@ -163,28 +243,52 @@ body {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  text-align: center;
   color: var(--font-color);
 }
 
 .team-position {
+  margin-top: 8px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: center;
   color: var(--secondary-font-color);
 }
 
 .footer {
+  padding: 100px 0;
   background-color: var(--font-color);
 }
 
+.footer-text-wrap {
+  max-width: 264px;
+}
+
 .footer-text {
+margin-top: 16px;
 font-size: 16px;
-list-style: 1.5;
+line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--white-color);
 }
 
+.portfolio {
+  padding: 96px 120px;
+}
+
+.portfolio-list {
+  margin-top: 72px;
+}
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
 .filter-btn {
+  padding: 12px 24px;
   font-family: "Roboto", sans-serif;
   background-color: var(--dark-white-color);
   color: var(--violet-color);
@@ -205,6 +309,26 @@ color: var(--white-color);
   border: none;
 }
 
+.portfolio-list {
+display: flex;
+flex-wrap: wrap;
+gap: 48px 24px;
+}
+
+.portfolio-card {
+  width: calc((100% - 48px) / 3);
+  border: 1px solid #E7E9FC;
+}
+
+.portfolio-img {
+  width: 100%;
+}
+
+.portfolio-text-wrap {
+  margin: 32px 0;
+  padding-left: 16px;
+}
+
 .portfolio-heading {
   font-weight: 500;
   font-size: 20px;
@@ -214,6 +338,7 @@ color: var(--white-color);
 }
 
 .portfolio-text {
+  margin-top: 8px;
   font-size: 16px;
   letter-spacing: 0.02em;
   color: var(--secondary-font-color);
