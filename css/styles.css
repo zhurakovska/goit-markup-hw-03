@@ -341,13 +341,13 @@ gap: 48px 24px;
 }
 
 .portfolio-text-wrap {
-  padding-left: 32px 16px;
-  border-top: none;
+  padding: 32px 16px;
   border: 1px solid var(--border-color);
+  border-top: none;
 }
 
 .portfolio-heading {
-  margin-bottom: 8px
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
