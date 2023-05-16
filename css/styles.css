@@ -328,9 +328,6 @@ flex-wrap: wrap;
 gap: 48px 24px;
 }
 
-.card-container {
-
-}
 
 .portfolio-card {
   width: calc((100% - 48px) / 3);
