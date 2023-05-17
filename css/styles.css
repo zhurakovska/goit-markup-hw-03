@@ -48,10 +48,6 @@ body {
   border: none;
 }
 
-.section {
-  padding: 120px 0;
-}
-
 .header {
   padding: 24px 0;
   border-bottom: 1px solid var(--border-color); 
@@ -200,6 +196,10 @@ padding: 120px 0;
   color: var(--secondary-font-color);
 }
 
+.about {
+  padding-bottom: 120px;
+}
+
 .about-title {
   margin-bottom: 72px;
   font-size: 36px;
@@ -217,6 +217,7 @@ padding: 120px 0;
 }
 
 .team {
+  padding: 120px 0;
   background-color: var(--dark-white-color);
 }
 
@@ -278,7 +279,6 @@ padding: 32px 16px;
 
 .footer-text {
 max-width: 264px;
-margin-top: 16px;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
@@ -289,9 +289,6 @@ color: var(--white-color);
   padding: 96px 0 120px; 
 }
 
-.portfolio-list {
-  margin-bottom: 72px;
-}
 
 .filter-list {
   margin-bottom: 72px;
@@ -344,7 +341,6 @@ gap: 48px 24px;
 }
 
 .portfolio-heading {
-  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
